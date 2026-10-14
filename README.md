@@ -1,6 +1,5 @@
 # WSA Houdini vfork / Scudo Fix
 
-作者：**[wuldas](https://github.com/wuldas)** · `0.4.0-experimental` · GPL-3.0
 
 An experimental Magisk root/ptrace compatibility guard for a **specific x86_64 WSA / Houdini build**. It keeps the APK and system libraries unchanged and adjusts one exact `clone` flag combination at runtime. This is **not** a universal WSA fix, a 32-bit ARM fix, or a video-codec fix.
 
