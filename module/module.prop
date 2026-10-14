@@ -1,0 +1,8 @@
+id=wsa_houdini_vfork_scudo
+name=WSA vfork Scudo Fix (zygote64 descendants / Houdini clone guard)
+version=0.4.0-experimental
+versionCode=4
+author=wuldas
+description=Resident root/ptrace Houdini clone guard for pinned x86_64 WSA Android 13. Keeps all system library bytes unchanged. Watches zygote64 descendants, including x86-only processes with the preloaded bridge. At the pinned Houdini syscall instruction, only clone flags 0x4111 become 0x4011; other syscalls and flags are untouched. No 32-bit repair, Zygisk, properties or protection-check changes. Disable/Uninstall requests graceful SIGTERM and detach without stopping apps. Experimental; application and video compatibility require real-world verification.
+minSdk=33
+maxSdk=33

@@ -1,0 +1,27 @@
+# Build products belong in Releases, not Git history.
+/out/
+/build/
+*.o
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.dsc
+
+# Never publish investigated applications, device images or runtime evidence.
+*.apk
+*.apks
+*.aab
+*.so
+*.vhd
+*.vhdx
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.log
+*.jsonl
+.env
+.env.*
+Thumbs.db
+.DS_Store
